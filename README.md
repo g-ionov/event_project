@@ -24,4 +24,4 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-В дополнение к основному заданию был добавлен Docker, Docker-Compose, а также автодокументация API по адресу 'api/v1/swagger'
+В дополнение к основному заданию был добавлен Docker, Docker-Compose, а также автодокументация API по адресу 'api/v1/swagger' и 'api/v1/redoc'
