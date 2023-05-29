@@ -44,7 +44,7 @@ class Event(models.Model):
     """ Event model """
     title = models.CharField(max_length=100)
     description = models.TextField()
-    organization = models.ManyToManyField(Organization, related_name='events')
+    organization = models.ManyToManyField(Organization, related_name='events', blank=True)
     date = models.DateField()
     image = models.ImageField(
         upload_to='event_images',

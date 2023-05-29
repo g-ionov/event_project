@@ -6,7 +6,7 @@ from event_app.models import User, Organization, Event
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
     list_display = ('id', 'email', 'organization', 'username', 'is_staff', 'is_active', 'is_superuser')
-    readonly_fields = ('date_joined', 'last_login')
+    readonly_fields = ('date_joined', 'last_login', 'password')
     list_display_links = ('id', 'email')
     list_filter = ('is_staff', 'is_active', 'is_superuser', 'organization')
     search_fields = ('email', 'username', 'organization__title')
